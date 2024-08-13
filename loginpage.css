@@ -1,0 +1,67 @@
+.loginPage {
+    background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+    width: 100vw;
+    height: 100vh;
+}
+.Login {
+    background: black;
+    position: absolute;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 1fr;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2 {
+    grid-area: 1 / span 2;
+    color: bisque;
+    justify-self: center;
+    align-self: center;
+}
+.input {
+    justify-self: center;
+    height: 50px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+}
+.input.text{
+    grid-area: 2 / span 2;
+}
+.input.email{
+    grid-area: 3 /span 2;
+}
+.input.password{
+    grid-area: 4 /span 2;
+}
+.input.submit{
+    grid-area: 5 /span 1;
+}
+.input.reset{
+    grid-area: 5 /span 1;
+}
+@media (min-width: 273px) and (max-width: 649px) {
+    .Login {
+        width: 95%;
+        height: 38%;
+    }
+    .input {
+        height: 40px;
+        width: 80%;
+    }
+}
+@media (min-width: 650px) and (max-width: 950px) {
+    .Login {
+        width: 70%;
+        height: 45%;
+    }
+    .input {
+        height: 45px;
+        width: 80%;
+    }
+}
