@@ -1,0 +1,23 @@
+section {
+    text-align: center;
+    grid-area: sec;
+    height: 1800px;
+}
+.vidios {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+    background-color: #aaa;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    top: 35%;
+    height: 1100px;
+    gap: 10px;
+    transform: translate(-50%, -50%);
+}
+video {
+    height: 210px;
+}
+.item {
+    height: 210px;
+}
