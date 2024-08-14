@@ -1,3 +1,4 @@
+//menu slide and transition
 function menu() {
     const menu = document.querySelector(".menu ");
     menu.classList.toggle('menuTransition');
@@ -6,8 +7,12 @@ function menu() {
     const line2Width = document.querySelector(".line2");
     line2Width.classList.toggle("line2Width");
 }
-function search() {
-    const overlay = document.querySelector(".overlay");
-        overlay.classList.toggle("overlayShow")
-    const list = document.querySelector(".suggested")
+//display overlay
+const searchInput = document.querySelector(".search-contener")
+const overlay = document.querySelector(".overlay")
+searchInput.onfocus = function() {
+    overlay.classList.add("overlayShow")
+}
+searchInput.onblur = function() {
+    overlay.classList.remove("overlayShow")
 }

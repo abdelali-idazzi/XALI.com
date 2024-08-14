@@ -15,9 +15,45 @@ section {
     gap: 10px;
     transform: translate(-50%, -50%);
 }
-video {
-    height: 210px;
-}
 .item {
     height: 210px;
+    background-color: #eee;
+}
+/* smal and midime screen*/
+@media (min-width: 230px) and (max-width: 700px) {
+    section {
+        height: 3500px;
+    }
+    .vidios {
+        grid-template: repeat(15, 1fr) / repeat(1, 1fr);
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        height: 3300px;
+        gap: 10px;
+        transform: translate(-50%, -50%);
+    }
+    .item {
+        height: 210px;
+        background-color: #eee;
+    }
+}
+/*larg screen*/
+@media (min-width: 701px) and (max-width: 1100px) {
+    section {
+        height: 1800px;
+    }
+    .vidios {
+        grid-template: repeat(8, 1fr) / repeat(2, 1fr);
+        width: 90%;
+        left: 50%;
+        top: 35%;
+        height: 1600px;
+        gap: 10px;
+        transform: translate(-50%, -50%);
+    }
+    .item {
+        height: 190px;
+        background-color: #eee;
+    }
 }
