@@ -19,7 +19,6 @@ nav {
     background: linear-gradient(to right, #000000, #555555);
     justify-content: center;
     align-items: center;
-    border-radius: 0 20px 20px 0;
     z-index: 5;
 }
 .search-contener {
@@ -148,15 +147,21 @@ nav .suggested a {
 /*larg screen*/
 @media (min-width: 650px) and (max-width: 1100px) {
     h1 {
-        top: 25px;
-        left: 67%;
-        width: 20%;
+        display: grid;
+        top: 20px;
+        left: 74%;
+        width: 21%;
+        height: 60px;
     }
     .spanLogo {
+        justify-self: center;
+        align-self: center;
         position: absolute;
-        font-size: 30px;
+        height: 50px;
+        width: 70%;
+        font-size: 50px;
+        top: 5px;
         color: #EE9CA7;
-        top: 10px;
     }
     #bur-icon {
         top: calc(79px /2);
