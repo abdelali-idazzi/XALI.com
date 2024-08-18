@@ -37,6 +37,7 @@ footer {
 .footerNav ul {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 .footerNav ul li a {
     text-decoration: none;
