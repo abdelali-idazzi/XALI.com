@@ -16,7 +16,9 @@ searchInput.onfocus = function() {
 searchInput.onblur = function() {
     overlay.classList.remove("overlayShow")
 }*/
+const overlay = document.querySelector(".overlay")
 let input = document.querySelector(".searchBox");
+const div = document.querySelector(".list");
 let autoComplate = [
     "abdali",
     "kawtar",
@@ -28,9 +30,14 @@ let autoComplate = [
     "how to fix your PC",
     "lamar",
     "bangladish",
-    
+
 ];
-const div = document.querySelector(".list");
+input.onblur = function() {
+    overlay.classList.remove("overlayShow")
+}
+input.onfocus = function() {
+    overlay.classList.add("overlayShow")
+}
 input.onkeyup = function() {
     let result = [];
     let inputValue = input.value;
