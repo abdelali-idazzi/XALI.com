@@ -1,4 +1,4 @@
-//menu slide and transition
+   //menu slide and transition
 function menu() {
     const menu = document.querySelector(".menu ");
     menu.classList.toggle('menuTransition');
@@ -7,22 +7,14 @@ function menu() {
     const line2Width = document.querySelector(".line2");
     line2Width.classList.toggle("line2Width");
 }
-//display overlay
-/*const searchInput = document.querySelector(".search-contener")
-const overlay = document.querySelector(".overlay")
-searchInput.onfocus = function() {
-    overlay.classList.add("overlayShow")
-}
-searchInput.onblur = function() {
-    overlay.classList.remove("overlayShow")
-}*/
 const overlay = document.querySelector(".overlay")
 let input = document.querySelector(".searchBox");
 const div = document.querySelector(".list");
 let autoComplate = [
     "abdali",
-    "kawtar",
-    "hakima",
+    "C++",
+
+    "smail",
     "java script",
     "HTML",
     "CSS",
@@ -32,12 +24,15 @@ let autoComplate = [
     "bangladish",
 
 ];
+    //display overlay
 input.onblur = function() {
     overlay.classList.remove("overlayShow")
 }
 input.onfocus = function() {
     overlay.classList.add("overlayShow")
 }
+
+    //autocomplate list 
 input.onkeyup = function() {
     let result = [];
     let inputValue = input.value;
@@ -50,10 +45,11 @@ input.onkeyup = function() {
 }
 function display(result) {
     let content = result.map((list) => {
-        return `<li onclick="displayOnInput(this)"> ${list}</li>`;
+        return `<li onclick="displayOnInput(this)">${list}</li>`;
     });
     div.innerHTML = "<ul>"+content.join("")+"</ul>"
 }
 function displayOnInput(list) {
     input.value = list.innerHTML
 }
+const searchButton = document.querySelector(".searchButton");

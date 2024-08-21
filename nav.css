@@ -85,7 +85,7 @@ nav {
 nav .list ul {
     list-style: none;
     position: absolute;
-    overflow-y: scroll;
+    overflow: auto;
     width: 50%;
     max-height: 200px;
     left: 10%;
