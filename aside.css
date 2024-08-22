@@ -91,9 +91,10 @@ aside ul li a {
         background-color: white;
         cursor: pointer;
         text-align: center;
+        width: 90%;
         border-radius: 7px;
         flex-basis: 10%;
-        right: 10%;
+        right: 5%;
     }
     .menu {
             width: 100%;
