@@ -38,7 +38,7 @@ input.onkeyup = function() {
     let inputValue = input.value;
     if (inputValue.length) {
         result = autoComplate.filter((keyword) => {
-            return keyword.toLowerCase().includes(inputValue.toLowerCase());
+            return keyword.toLowerCase().startsWith(inputValue.toLowerCase());
         });
     }
     display(result);
