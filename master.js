@@ -72,7 +72,7 @@ input.onkeyup = function() {
 
 
     searchButton.prepend(searchLink);
-    searchLink.setAttribute("href", `#${input.value}`);
+    searchLink.setAttribute("href", `#${input.value.toLowerCase()}`);
     console.log(searchButton);
     display(result);
 }
@@ -84,7 +84,7 @@ function display(result) {
 }
 function displayOnInput(list) {
     input.value = list.innerHTML
-    searchLink.setAttribute("href", `#${input.value}`);
+    searchLink.setAttribute("href", `#${input.value.toLowerCase()}`);
 }
 
 searchButton.onclick = function () {
