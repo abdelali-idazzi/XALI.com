@@ -73,7 +73,6 @@ input.onkeyup = function() {
 
     searchButton.prepend(searchLink);
     searchLink.setAttribute("href", `#${input.value.toLowerCase()}`);
-    console.log(searchButton);
     display(result);
 }
 function display(result) {
