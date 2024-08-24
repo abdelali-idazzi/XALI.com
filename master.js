@@ -42,12 +42,20 @@ let autoComplate = [
 
 ];
     //display overlay
+    const list = document.querySelector(".list")
 input.onblur = function() {
     overlay.classList.remove("overlayShow")
 }
 input.onfocus = function() {
     overlay.classList.add("overlayShow")
+    list.style.visibility = "visible"
 }
+
+    //button link
+
+const searchButton = document.querySelector(".searchButton");
+let searchLink = document.createElement("a");
+searchLink.className = "searchLink";
 
     //autocomplate list 
 input.onkeyup = function() {
@@ -58,6 +66,12 @@ input.onkeyup = function() {
             return keyword.toLowerCase().startsWith(inputValue.toLowerCase());
         });
     }
+    //put alink inside button
+
+
+    searchButton.prepend(searchLink);
+    searchLink.setAttribute("href", `#${input.value}`);
+    console.log(searchButton);
     display(result);
 }
 function display(result) {
@@ -68,5 +82,10 @@ function display(result) {
 }
 function displayOnInput(list) {
     input.value = list.innerHTML
+    searchLink.setAttribute("href", `#${input.value}`);
 }
-const searchButton = document.querySelector(".searchButton");
+
+searchButton.onclick = function () {
+    list.style.visibility = "hidden"
+}
+
