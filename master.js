@@ -50,7 +50,9 @@ input.onfocus = function() {
     overlay.classList.add("overlayShow")
     list.style.visibility = "visible"
 }
-
+overlay.onclick = function() {
+        list.style.visibility = "hidden"
+}
     //button link
 
 const searchButton = document.querySelector(".searchButton");
