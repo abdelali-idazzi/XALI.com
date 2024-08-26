@@ -94,9 +94,10 @@ searchButton.onclick = function () {
 const container = document.querySelector(".container");
 const main = document.querySelector(".main")
 const colors = document.querySelectorAll(".color")
+const spanLogo = document.querySelector(".spanLogo")
 
-
-main.style.background = window.localStorage.getItem("color")
+main.style.background = window.localStorage.getItem("backgroundColor")
+spanLogo.style.color = window.localStorage.getItem("color")
 
 colors.forEach((color) => {
     color.addEventListener('click', (even) => {
@@ -104,7 +105,9 @@ colors.forEach((color) => {
         color.classList.remove("active")
         })
         color.classList.add("active")
+        window.localStorage.setItem("backgroundColor", even.currentTarget.dataset.backgroundcolor)
         window.localStorage.setItem("color", even.currentTarget.dataset.color)
-        main.style.background =  even.currentTarget.dataset.color
+        main.style.background =  even.currentTarget.dataset.backgroundcolor
+        spanLogo.style.color = even.currentTarget.dataset.color
     }) 
 })
