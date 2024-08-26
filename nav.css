@@ -9,7 +9,7 @@ h1 {
     position: relative;
     top: -10px;
     font-size: 60px;
-    color: #EE9CA7;
+    color: rgb(255 191 200);
 }
 nav {
     position: sticky;
@@ -115,7 +115,6 @@ nav li {
     .spanLogo {
         position: absolute;
         font-size: 30px;
-        color: #EE9CA7;
         top: 10px;
     }
     #bur-icon {
@@ -169,7 +168,6 @@ nav li {
         width: 70%;
         font-size: 50px;
         top: 5px;
-        color: #EE9CA7;
     }
     #bur-icon {
         top: calc(79px /2);

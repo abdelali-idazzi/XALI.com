@@ -23,6 +23,7 @@
     z-index: 4;
 }
 .page {
+    background: linear-gradient(to right, #EE9CA7, #FFDDE1);
     width: 100vw;
     height: 800vh;
     display: grid;

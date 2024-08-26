@@ -90,7 +90,7 @@ searchButton.onclick = function () {
     list.style.visibility = "hidden"
 }
 
-//
+// window.localStorage.clear()
 const container = document.querySelector(".container");
 const main = document.querySelector(".main")
 const colors = document.querySelectorAll(".color")
