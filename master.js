@@ -70,7 +70,7 @@ input.onkeyup = function() {
     }
     //put alink inside button
 
-
+    
     searchButton.prepend(searchLink);
     searchLink.setAttribute("href", `#${input.value.toLowerCase()}`);
     display(result);
@@ -90,3 +90,21 @@ searchButton.onclick = function () {
     list.style.visibility = "hidden"
 }
 
+//
+const container = document.querySelector(".container");
+const main = document.querySelector(".main")
+const colors = document.querySelectorAll(".color")
+
+
+main.style.background = window.localStorage.getItem("color")
+
+colors.forEach((color) => {
+    color.addEventListener('click', (even) => {
+        colors.forEach((color) => {
+        color.classList.remove("active")
+        })
+        color.classList.add("active")
+        window.localStorage.setItem("color", even.currentTarget.dataset.color)
+        main.style.background =  even.currentTarget.dataset.color
+    }) 
+})

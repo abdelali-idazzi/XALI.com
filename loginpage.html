@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
-    <div class="loginPage">
+    <div class="loginPage main">
         <section>
             <form class="Login" action="info.js" method="post">
                 <h2>sign in</h2>  
@@ -20,5 +20,9 @@
             </form>
         </section>
     </div>
+    <script>
+        const main = document.querySelector(".main")
+        main.style.background = window.localStorage.getItem("color")
+    </script>
 </body>
 </html>
