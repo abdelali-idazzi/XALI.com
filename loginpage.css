@@ -55,10 +55,10 @@ h2 {
         width: 80%;
     }
 }
-@media (min-width: 650px) and (max-width: 1000px) {
+@media (min-width: 650px) and (max-width: 1100px) {
     .Login {
-        width: 70%;
-        height: 45%;
+        width: 50%;
+        height: 40%;
     }
     .input {
         height: 45px;
