@@ -7,6 +7,12 @@ function menu() {
     markRotate.classList.toggle('markRotate'); 
     line2Width.classList.toggle("line2Width");
 }
+// colors transition
+const colorsButton = document.querySelector(".colorsButton")
+colorsButton.addEventListener('click', () => {
+    container.classList.toggle("transition")
+});
+
 const overlay = document.querySelector(".overlay")
 let input = document.querySelector(".searchBox");
 const div = document.querySelector(".list");
@@ -101,6 +107,7 @@ const spanLogo = document.querySelector(".spanLogo");
 main.style.background = window.localStorage.getItem("backgroundColor");
 spanLogo.style.color = window.localStorage.getItem("color");
 searchButton.style.background = window.localStorage.getItem("color");
+colorsButton.style.background = window.localStorage.getItem("backgroundColor");
 
 colors.forEach((color) => {
     color.addEventListener('click', (even) => {
@@ -113,5 +120,6 @@ colors.forEach((color) => {
         main.style.background =  even.currentTarget.dataset.backgroundcolor;
         spanLogo.style.color = even.currentTarget.dataset.color;
         searchButton.style.background = even.currentTarget.dataset.color;
-    }) 
+        colorsButton.style.background = even.currentTarget.dataset.backgroundcolor;
+    })
 })

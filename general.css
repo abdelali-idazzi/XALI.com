@@ -25,7 +25,7 @@
 .page {
     background: linear-gradient(to right, #EE9CA7, #FFDDE1);
     width: 100vw;
-    height: 800vh;
+    height: 500vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px auto 300px;

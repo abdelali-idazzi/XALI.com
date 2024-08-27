@@ -1,12 +1,27 @@
+.colorsButton {
+    background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    right: 45.5%;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+}
 .container {
     justify-content: space-between;
     background-color: #ddd;
     flex-direction: column;
-    position: absolute;
+    transition: all 1s 0.3s;
+    position: fixed;
     display: flex;
     height: 400px;
     padding: 20px;
-    top: 100px;
+    bottom: 328px;
+    right: -100px;
+}
+.transition {
     right: 0;
 }
 .color {
@@ -34,4 +49,13 @@
 }
 .color4 {
     background: linear-gradient(to right, #334D50, #CBCAA5 );
+}
+/* medium scren */
+@media (min-width: 230px) and (max-width: 649px) {
+    .container {
+        bottom: 446px;
+    }
+}
+@media (min-width: 650px) and (max-width: 1100px) {
+
 }
