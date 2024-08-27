@@ -11,6 +11,9 @@ function menu() {
 const colorsButton = document.querySelector(".colorsButton")
 colorsButton.addEventListener('click', () => {
     container.classList.toggle("transition")
+    container.addEventListener('mouseleave', () => {
+        container.classList.remove("transition")
+    })
 });
 
 const overlay = document.querySelector(".overlay")
