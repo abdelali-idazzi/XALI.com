@@ -11,15 +11,16 @@
 }
 .container {
     justify-content: space-between;
-    background-color: #ddd;
-    flex-direction: column;
     transition: right 1s 0.3s;
+    background-color: #ddd;
+    border-radius: 30px 0 0;
+    flex-direction: column;
     position: fixed;
     display: flex;
     height: 400px;
     padding: 20px;
-    bottom: 328px;
-    right: -100px;
+    bottom: 300px;
+    right: -110px;
 }
 .transition {
     right: 0;
@@ -28,9 +29,9 @@
     border: 2px solid transparent;
     transition: 0.3s;
     cursor: pointer;
-    height: 60px;
+    height: 70px;
     opacity: 0.5;
-    width: 60px;
+    width: 70px;
 }
 .active {
     opacity: 1;
@@ -42,7 +43,7 @@
     background: linear-gradient(to right, #EE9CA7, #FFDDE1);
 }
 .color2 {
-    background: linear-gradient(to right, #2193B0, #6DD5ED);
+    background: linear-gradient(to right, #FAD0C4, #F5F5DC);
 }
 .color3 {
     background: linear-gradient(to right, #00416A, #E4E5E6);
