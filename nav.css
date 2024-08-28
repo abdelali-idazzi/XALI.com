@@ -106,6 +106,9 @@ nav li {
 }
 /* small and medime screen*/
 @media (min-width: 230px) and (max-width: 649px) {
+    nav {
+        border-bottom: 1px solid #ddd;
+    }
     h1 {
         top: 25px;
         left: 67%;
@@ -119,6 +122,11 @@ nav li {
     #bur-icon {
         top: calc(79px /2);
         border: unset;
+    }
+    .line2 {
+        top: 9px;
+        width: 100%;
+        transition: 0;
     }
     .searchBox {
         font-size: 18px;
