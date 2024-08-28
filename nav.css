@@ -129,7 +129,7 @@ nav li {
     }
     .searchButton {
         top: calc((100px - 34px) / 2);
-        left: 61%;
+        left: 59%;
     }
     nav .list ul {
         list-style: none;
