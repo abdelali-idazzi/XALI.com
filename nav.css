@@ -105,7 +105,7 @@ nav li {
     border-top: solid 1px #aaa;
 }
 /* small and medime screen*/
-@media (min-width: 250px) and (max-width: 649px) {
+@media (min-width: 230px) and (max-width: 649px) {
     h1 {
         top: 25px;
         left: 67%;

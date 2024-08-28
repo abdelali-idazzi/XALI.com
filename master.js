@@ -16,6 +16,7 @@ colorsButton.addEventListener('click', () => {
     })
 });
 
+//autocomplate list 
 const overlay = document.querySelector(".overlay")
 let input = document.querySelector(".searchBox");
 const div = document.querySelector(".list");
@@ -62,13 +63,12 @@ input.onfocus = function() {
 overlay.onclick = function() {
         list.style.visibility = "hidden"
 }
-    //button link
 
+    //searchButton link
 const searchButton = document.querySelector(".searchButton");
 let searchLink = document.createElement("a");
 searchLink.className = "searchLink";
 
-    //autocomplate list 
 input.onkeyup = function() {
     let result = [];
     let inputValue = input.value;
@@ -78,8 +78,6 @@ input.onkeyup = function() {
         });
     }
     //put alink inside button
-
-    
     searchButton.prepend(searchLink);
     searchLink.setAttribute("href", `#${input.value.toLowerCase()}`);
     display(result);
@@ -104,7 +102,6 @@ const container = document.querySelector(".container");
 const main = document.querySelector(".main");
 const colors = document.querySelectorAll(".color");
 const spanLogo = document.querySelector(".spanLogo");
-
 
 
 main.style.background = window.localStorage.getItem("backgroundColor");
