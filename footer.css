@@ -70,6 +70,9 @@ footer {
     opacity: 0.7;
 }
 @media (min-width: 230px) and (max-width: 649px) {
+    .footerContainer {
+        padding: 20px 30px 20px;
+    }
     .footerNav ul {
         flex-direction: column;
 

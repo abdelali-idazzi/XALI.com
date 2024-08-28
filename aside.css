@@ -22,43 +22,28 @@
         top: 80px;
     }
     .loginButton {
-        background-color: transparent;
+        background-color: white;
         display: inline-block;
-        position: relative;
+        position: fixed;
         border-radius: 50%;
         border: none;
         height: 50px;
         width: 50px;
-        top: 20px;
-        left: 10%;
+        top: 90vh;
+        left: 95vw;
     }
     .fa-circle-user {
-        color: #FFFFFF;
+        color: #bbb;
         font-size: 48px;
         margin: auto;
+        z-index: 3;
     }
-    .mark {
-        transition: 1.5s 0s ease;
-        position: absolute;
-        font-size: 40px;
-        color: white;
-        left: 85%;
-        top: 11px;
-    }
-    .markRotate {
-        transform: rotate(180deg);
-    }
-    aside hr {
-        top: 5%;
-        position: relative;
-    }
-    aside button a {
+    .loginButton a {
         position: absolute;
         display: block;
         height: 40px;
         width: 40px;
         margin: 4px;
-        top: 0;
     }
     aside ul {
         justify-content: space-around;
@@ -113,43 +98,28 @@
         top: 80px;
     }
     .loginButton {
-        background-color: transparent;
+        background-color: white;
         display: inline-block;
-        position: relative;
+        position: fixed;
         border-radius: 50%;
         border: none;
         height: 50px;
         width: 50px;
-        top: 20px;
-        left: 10%;
+        top: 90vh;
+        left: 93vw;
     }
     .fa-circle-user {
-        color: #FFFFFF;
+        color: #bbb;
         font-size: 48px;
         margin: auto;
+        z-index: 3;
     }
-    .mark {
-        transition: 1.5s 0s ease;
-        position: absolute;
-        font-size: 40px;
-        color: white;
-        left: 85%;
-        top: 11px;
-    }
-    .markRotate {
-        transform: rotate(180deg);
-    }
-    aside hr {
-        top: 5%;
-        position: relative;
-    }
-    aside button a {
+    .loginButton a {
         position: absolute;
         display: block;
         height: 40px;
         width: 40px;
         margin: 4px;
-        top: 0;
     }
     aside ul {
         justify-content: space-around;
@@ -191,7 +161,7 @@
     .menu {
         background: linear-gradient(to right, #000000, #555555);
         transform: translateY(-100px);
-        transition: 1.5s ease;
+        transition: transform 1.5s ease;
         position: relative;
         height: 100px;
         width: 100%;
@@ -203,29 +173,23 @@
         z-index: 1;
     }
     .loginButton {
-        background-color: transparent;
+        background-color: white;
         display: inline-block;
-        position: relative;
+        position: fixed;
         border-radius: 50%;
         border: none;
         height: 50px;
         width: 50px;
-        top: 25px;
-        left: 2%;
+        top: 90vh;
+        left: 90vw;
     }
     .fa-circle-user {
-        color: #FFFFFF;
+        color: #bbb;
         font-size: 48px;
         margin: auto;
+        z-index: 3;
     }
-    aside hr {
-        left: 4%;
-        position: relative;
-        transform: rotate(90deg);
-        width: 100px;
-        top: -19px;
-    }
-    aside .loginButton a {
+    .loginButton a {
         position: absolute;
         display: block;
         height: 40px;
@@ -240,7 +204,7 @@
         display: flex;
         height: 50%;
         width: 80%;
-        left: 19%;
+        left: 10%;
         top: 25px;
     }
     aside li {

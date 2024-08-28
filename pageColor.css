@@ -19,7 +19,7 @@
     display: flex;
     height: 400px;
     padding: 20px;
-    bottom: 300px;
+    bottom: 320px;
     right: -110px;
 }
 .transition {
@@ -54,11 +54,11 @@
 /* medium scren */
 @media (min-width: 230px) and (max-width: 649px) {
     .container {
-        bottom: 446px;
+        bottom: 416px;
     }
 }
 @media (min-width: 650px) and (max-width: 1100px) {
     .container {
-    bottom: 381px;
+    bottom: 330px;
     }
 }
