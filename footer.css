@@ -1,6 +1,7 @@
 footer {
     background-color: #111;
     grid-area: foot;
+    z-index: 3;
 }
 .footerContainer {
     padding: 50px 30px 20px;

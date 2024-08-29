@@ -22,39 +22,51 @@
     opacity: 1;
     z-index: 4;
 }
-.page {
-    background: linear-gradient(to right, #EE9CA7, #FFDDE1);
-    width: 100vw;
-    height: 500vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px auto 320px;
-    grid-template-areas:
-    " nav nav nav nav nav nav nav nav nav nav nav nav" 
-    "side side sec sec sec sec sec sec sec sec sec sec" 
-    "foot foot foot foot foot foot foot foot foot foot foot foot";
-}
-/* medium scren */
-@media (min-width: 230px) and (max-width: 649px) {
+@media (min-width: 1101px) {
     .page {
-        height: 550vh;
+        background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+        width: 100vw;
+        display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 100px  100px auto 416px;
+        grid-template-rows: 80px 100px auto 320px;
         grid-template-areas:
-        " nav nav nav nav nav nav" 
+        "nav nav nav nav nav nav" 
         "side side side side side side"
         "sec sec sec sec sec sec" 
         "foot foot foot foot foot foot";
     }
 }
+
+
+/* tablet screen */
 @media (min-width: 650px) and (max-width: 1100px) {
     .page {
-        height: 500vh;
+        background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+        display: grid;
+        width: 100vw;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 100px auto 330px;
+        grid-template-rows: 100px 100px auto 330px;
         grid-template-areas:
-        " nav nav nav nav nav nav" 
-        "side side sec sec sec sec" 
+        "nav nav nav nav nav nav" 
+        "side side side side side side"
+        "sec sec sec sec sec sec" 
+        "foot foot foot foot foot foot";
+    }
+}
+
+
+/* small screen */
+@media (min-width: 230px) and (max-width: 649px) {
+    .page {
+        background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px 100px auto 416px;
+        grid-template-areas:
+        "nav nav nav nav nav nav" 
+        "side side side side side side"
+        "sec sec sec sec sec sec" 
         "foot foot foot foot foot foot";
     }
 }

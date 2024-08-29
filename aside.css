@@ -8,18 +8,18 @@
     }
     .menu {
         background: linear-gradient(to right, #000000, #555555);
-        transform: translateX(-100%);
-        border-radius: 0 15px 15px 0;
-        transition: 1.5s 0s ease;
+        transition: transform 1.5s 0s ease;
+        transform: translateY(-100px);
         position: relative;
-        height: 650px;
-        width: 90%;
+        height: 100px;
+        width: 100%;
         z-index: 0;
     }
     .menuTransition {
-        transform: translateX(0);
-        position: sticky;
+        transform: translateY(0);
+        position: fixed;
         top: 80px;
+        z-index: 1;
     }
     .loginButton {
         background-color: white;
@@ -47,31 +47,33 @@
     }
     aside ul {
         justify-content: space-around;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         list-style: none;
         display: flex;
-        height: 80%;
-        width: 60%;
-        left: 20%;
-        top: 10%;
+        height: 50%;
+        width: 92%;
+        left: 5%;
+        top: 25px;
     }
     aside li {
-        background-color: white;
+        background-color: transparent;
         position: relative;
         text-align: center;
-        border-radius: 7px;
         cursor: pointer;
-        flex-basis: 10%;
     }
     aside ul li a {
-        text-decoration: none;
+        text-decoration-color: #ddd;
+        text-decoration-line: none;
         position: relative;
-        font-size: 24px;
-        color: red;
+        font-size: 30px;
+        color: #ddd;
         height: 20px;
         top: 10px;
-    
+        
+    }
+    aside ul li a:hover {
+    text-decoration-line: underline;
     }
 }
 
@@ -84,18 +86,18 @@
     }
     .menu {
         background: linear-gradient(to right, #000000, #555555);
-        transform: translateX(-100%);
-        border-radius: 0 15px 15px 0;
-        transition: 1.5s 0s ease;
+        transition: transform 1.5s 0s ease;
+        transform: translateY(-100px);
         position: relative;
-        height: 650px;
-        width: 90%;
+        height: 100px;
+        width: 100%;
         z-index: 0;
     }
     .menuTransition {
-        transform: translateX(0);
-        position: sticky;
-        top: 80px;
+        transform: translateY(0);
+        position: fixed;
+        top: 100px;
+        z-index: 1;
     }
     .loginButton {
         background-color: white;
@@ -123,31 +125,33 @@
     }
     aside ul {
         justify-content: space-around;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         list-style: none;
         display: flex;
-        height: 80%;
-        width: 60%;
-        left: 20%;
-        top: 10%;
+        height: 50%;
+        width: 92%;
+        left: 5%;
+        top: 25px;
     }
     aside li {
-        background-color: white;
+        background-color: transparent;
         position: relative;
         text-align: center;
-        border-radius: 7px;
         cursor: pointer;
-        flex-basis: 10%;
     }
     aside ul li a {
-        text-decoration: none;
+        text-decoration-color: #ddd;
+        text-decoration-line: none;
         position: relative;
         font-size: 24px;
-        color: red;
+        color: #ddd;
         height: 20px;
         top: 10px;
     
+    }
+    aside ul li a:hover {
+    text-decoration-line: underline;
     }
 }
 
@@ -211,7 +215,6 @@
         background-color: transparent;
         position: relative;
         text-align: center;
-        border-radius: 7px;
         cursor: pointer;
     }
     aside ul li a {

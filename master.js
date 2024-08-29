@@ -1,10 +1,8 @@
 //menu slide and transition
-const markRotate = document.querySelector(".mark");
 const line2Width = document.querySelector(".line2");
 function menu() {
     const menu = document.querySelector(".menu ");
     menu.classList.toggle('menuTransition');
-    markRotate.classList.toggle('markRotate'); 
     line2Width.classList.toggle("line2Width");
 }
 // colors transition
@@ -12,6 +10,9 @@ const colorsButton = document.querySelector(".colorsButton")
 colorsButton.addEventListener('click', () => {
     container.classList.toggle("transition")
     container.addEventListener('mouseleave', () => {
+        container.classList.remove("transition")
+    })
+    document.addEventListener('blur', () => {
         container.classList.remove("transition")
     })
 });
