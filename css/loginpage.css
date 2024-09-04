@@ -21,16 +21,17 @@ h2 {
     align-self: center;
 }
 .input {
+    outline: none;
+    border: 0;
     justify-self: center;
     height: 50px;
     width: 80%;
     align-self: center;
     border-radius: 10px;
-    border: 0;
     padding-left: 0.375rem;
     padding-right: 0.375rem;
 }
-.input.text{
+.input.username{
     grid-area: 2 / span 2;
 }
 .input.email{
