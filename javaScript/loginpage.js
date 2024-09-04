@@ -22,13 +22,15 @@ const submitBtn = document.querySelector(".submit")
             email.style.border = " solid 3px #fc3434"
         }
     })
+    
     password.addEventListener('keyup', function () {
         if (password.value.match(/\w/)) {
             password.style.border = "solid 3px #68ff68"
-    } else {
-        password.style.border = " solid 3px #fc3434"
+        } else {
+            password.style.border = " solid 3px #fc3434"
         }
     })
+
 
     form.addEventListener('submit', (e) => {
         if(username.value.match(/\w/) && password.value.match(/\w/) && email.value.match(/^(?:(?!.*?[.]{2})[a-zA-Z0-9](?:[a-zA-Z0-9.+!%-]{1,64}|)|\"[a-zA-Z0-9.+!% -]{1,64}\")@[a-zA-Z0-9][a-zA-Z0-9.-]+(.[a-z]{2,}|.[0-9]{1,})$/)) {
@@ -38,6 +40,9 @@ const submitBtn = document.querySelector(".submit")
             e.preventDefault()
         }
     })
-
-
-
+    
+    form.addEventListener('reset', () => {
+        email.style.border = "none"
+        password.style.border = "none"
+        username.style.border = "none"
+    })
